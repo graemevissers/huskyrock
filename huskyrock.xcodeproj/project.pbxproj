@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		022ACD26240614000075ED9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022ACD25240614000075ED9C /* AppDelegate.swift */; };
 		022ACD28240614000075ED9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022ACD27240614000075ED9C /* SceneDelegate.swift */; };
-		022ACD2A240614000075ED9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022ACD29240614000075ED9C /* ViewController.swift */; };
+		022ACD2A240614000075ED9C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022ACD29240614000075ED9C /* HomeViewController.swift */; };
 		022ACD2D240614000075ED9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 022ACD2B240614000075ED9C /* Main.storyboard */; };
 		022ACD2F240614070075ED9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022ACD2E240614070075ED9C /* Assets.xcassets */; };
 		022ACD32240614070075ED9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 022ACD30240614070075ED9C /* LaunchScreen.storyboard */; };
 		022ACD3D240614070075ED9C /* huskyrockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022ACD3C240614070075ED9C /* huskyrockTests.swift */; };
 		022ACD48240614070075ED9C /* huskyrockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022ACD47240614070075ED9C /* huskyrockUITests.swift */; };
+		022FF0792408666200738F3E /* RouteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022FF0782408666200738F3E /* RouteCell.swift */; };
+		02C8DCAA24063B4C006FB30C /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C8DCA924063B4C006FB30C /* CenterViewController.swift */; };
+		02C8DCAC24063BAE006FB30C /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C8DCAB24063BAE006FB30C /* ContainerViewController.swift */; };
+		02C8DCAE240643B3006FB30C /* SidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C8DCAD240643B3006FB30C /* SidePanelViewController.swift */; };
+		02C8DCB024075C11006FB30C /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C8DCAF24075C11006FB30C /* Routes.swift */; };
+		02F7A75C240DE508009F1099 /* WallSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7A75B240DE508009F1099 /* WallSelectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +44,7 @@
 		022ACD22240614000075ED9C /* huskyrock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = huskyrock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		022ACD25240614000075ED9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		022ACD27240614000075ED9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		022ACD29240614000075ED9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		022ACD29240614000075ED9C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		022ACD2C240614000075ED9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		022ACD2E240614070075ED9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		022ACD31240614070075ED9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		022ACD43240614070075ED9C /* huskyrockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = huskyrockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		022ACD47240614070075ED9C /* huskyrockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = huskyrockUITests.swift; sourceTree = "<group>"; };
 		022ACD49240614080075ED9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		022FF0782408666200738F3E /* RouteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCell.swift; sourceTree = "<group>"; };
+		02C8DCA924063B4C006FB30C /* CenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
+		02C8DCAB24063BAE006FB30C /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		02C8DCAD240643B3006FB30C /* SidePanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidePanelViewController.swift; sourceTree = "<group>"; };
+		02C8DCAF24075C11006FB30C /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		02F7A75B240DE508009F1099 /* WallSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallSelectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +113,15 @@
 			children = (
 				022ACD25240614000075ED9C /* AppDelegate.swift */,
 				022ACD27240614000075ED9C /* SceneDelegate.swift */,
-				022ACD29240614000075ED9C /* ViewController.swift */,
-				022ACD2B240614000075ED9C /* Main.storyboard */,
+				022ACD29240614000075ED9C /* HomeViewController.swift */,
+				02F7A75B240DE508009F1099 /* WallSelectViewController.swift */,
+				02C8DCA924063B4C006FB30C /* CenterViewController.swift */,
+				02C8DCAB24063BAE006FB30C /* ContainerViewController.swift */,
+				02C8DCAD240643B3006FB30C /* SidePanelViewController.swift */,
+				02C8DCAF24075C11006FB30C /* Routes.swift */,
+				022FF0782408666200738F3E /* RouteCell.swift */,
 				022ACD2E240614070075ED9C /* Assets.xcassets */,
+				022ACD2B240614000075ED9C /* Main.storyboard */,
 				022ACD30240614070075ED9C /* LaunchScreen.storyboard */,
 				022ACD33240614070075ED9C /* Info.plist */,
 			);
@@ -259,8 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				022ACD2A240614000075ED9C /* ViewController.swift in Sources */,
+				022ACD2A240614000075ED9C /* HomeViewController.swift in Sources */,
+				022FF0792408666200738F3E /* RouteCell.swift in Sources */,
+				02C8DCB024075C11006FB30C /* Routes.swift in Sources */,
 				022ACD26240614000075ED9C /* AppDelegate.swift in Sources */,
+				02C8DCAC24063BAE006FB30C /* ContainerViewController.swift in Sources */,
+				02F7A75C240DE508009F1099 /* WallSelectViewController.swift in Sources */,
+				02C8DCAA24063B4C006FB30C /* CenterViewController.swift in Sources */,
+				02C8DCAE240643B3006FB30C /* SidePanelViewController.swift in Sources */,
 				022ACD28240614000075ED9C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
