@@ -32,12 +32,12 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <inset key="imageEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="GO TO THE ROCK" image="paperclip" catalog="system">
+                                <state key="normal" title="GO TO THE ROCK">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" weight="semibold"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickGoTorRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vOP-JZ-cDK"/>
+                                    <segue destination="Geh-9k-2Ia" kind="show" id="6vd-dw-bip"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3El-TL-Gqt">
@@ -72,12 +72,12 @@
                     <navigationItem key="navigationItem" id="9MF-xk-rlS"/>
                     <connections>
                         <outlet property="viewPDF" destination="3El-TL-Gqt" id="yAN-gd-SiB"/>
-                        <outlet property="viewRock" destination="dLw-D5-bWz" id="QMa-LE-w7T"/>
+                        <outlet property="viewRock" destination="dLw-D5-bWz" id="X0i-dS-Nwj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="95.758928571428569"/>
+            <point key="canvasLocation" x="952" y="96"/>
         </scene>
         <!--Center View Controller-->
         <scene sceneID="5Fa-r9-TFt">
@@ -88,29 +88,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE ROOF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R2n-gg-dZu" userLabel="Wall Label">
-                                <rect key="frame" x="0.0" y="44" width="414" height="114"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="70"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG-5231" translatesAutoresizingMaskIntoConstraints="NO" id="au1-tw-1iy" userLabel="Wall View">
-                                <rect key="frame" x="0.0" y="158" width="414" height="536"/>
+                                <rect key="frame" x="0.0" y="180" width="414" height="514"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hgk-T7-ZQB" userLabel="Route View">
-                                <rect key="frame" x="0.0" y="158" width="414" height="536"/>
+                                <rect key="frame" x="0.0" y="180" width="414" height="514"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO ROUTE SELECTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NO4-rh-RrO" userLabel="Title Label">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO ROUTE SELECTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NO4-rh-RrO" userLabel="Route Label">
                                 <rect key="frame" x="0.0" y="694" width="414" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TXQ-xp-7GF" userLabel="Description Label">
-                                <rect key="frame" x="0.0" y="756" width="414" height="93"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TXQ-xp-7GF" userLabel="Grade Label">
+                                <rect key="frame" x="113" y="740" width="189" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mzx-Mj-TaB" userLabel="Description Label">
+                                <rect key="frame" x="0.0" y="769" width="414" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -120,6 +127,7 @@
                             <constraint firstItem="hgk-T7-ZQB" firstAttribute="top" secondItem="R2n-gg-dZu" secondAttribute="bottom" id="01t-qp-dD3"/>
                             <constraint firstItem="NO4-rh-RrO" firstAttribute="top" secondItem="hgk-T7-ZQB" secondAttribute="bottom" id="7HO-Ra-blj"/>
                             <constraint firstItem="au1-tw-1iy" firstAttribute="top" secondItem="R2n-gg-dZu" secondAttribute="bottom" id="VIB-xK-PAr"/>
+                            <constraint firstItem="TXQ-xp-7GF" firstAttribute="top" secondItem="au1-tw-1iy" secondAttribute="bottom" constant="46" id="hga-vr-ogm"/>
                             <constraint firstItem="NO4-rh-RrO" firstAttribute="top" secondItem="au1-tw-1iy" secondAttribute="bottom" id="jty-dc-lKC"/>
                             <constraint firstItem="au1-tw-1iy" firstAttribute="trailing" secondItem="q80-8T-Ewb" secondAttribute="trailing" id="lU3-kB-gLn"/>
                             <constraint firstItem="hgk-T7-ZQB" firstAttribute="leading" secondItem="q80-8T-Ewb" secondAttribute="leading" id="n7l-aQ-4Vm"/>
@@ -128,11 +136,28 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q80-8T-Ewb"/>
                     </view>
+                    <navigationItem key="navigationItem" id="R80-VP-wip">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="MEA-9u-upl">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="L4m-kc-0nj">
+                                <rect key="frame" x="250" y="0.0" width="144" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="33"/>
+                                <state key="normal" title="Routes">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <connections>
+                                <action selector="routesTapped:" destination="Cc9-Jk-d0y" id="fPG-Fh-ePr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="description" destination="TXQ-xp-7GF" id="cYJ-aZ-n0F"/>
-                        <outlet property="descriptionLabel" destination="TXQ-xp-7GF" id="pD0-nz-UQV"/>
+                        <outlet property="descriptionLabel" destination="Mzx-Mj-TaB" id="Ja2-FA-5gU"/>
                         <outlet property="descriptor" destination="TXQ-xp-7GF" id="51c-Ef-FDH"/>
+                        <outlet property="gradeLabel" destination="TXQ-xp-7GF" id="Xi4-nP-4UO"/>
                         <outlet property="imageView" destination="au1-tw-1iy" id="ODe-Rk-0W0"/>
+                        <outlet property="routeLabel" destination="NO4-rh-RrO" id="6FB-0O-L7g"/>
                         <outlet property="routeView" destination="hgk-T7-ZQB" id="aUW-Ok-d9L"/>
                         <outlet property="titleLabel" destination="NO4-rh-RrO" id="c13-pc-0xv"/>
                         <outlet property="wallLabel" destination="R2n-gg-dZu" id="M7r-iE-eJi"/>
@@ -140,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CYV-D9-hLz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2031.8840579710147" y="94.419642857142847"/>
+            <point key="canvasLocation" x="2702.898550724638" y="95.758928571428569"/>
         </scene>
         <!--Side Panel View Controller-->
         <scene sceneID="aKH-OG-14E">
@@ -216,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gC-II-bUX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2995.6521739130435" y="90.401785714285708"/>
+            <point key="canvasLocation" x="3430" y="96"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nkv-XC-YL5">
@@ -239,7 +264,7 @@
         <!--Wall Select View Controller-->
         <scene sceneID="LO4-9R-AZm">
             <objects>
-                <viewController id="Geh-9k-2Ia" customClass="WallSelectViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WallSelectViewController" id="Geh-9k-2Ia" customClass="WallSelectViewController" customModule="huskyrock" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WDA-Pt-Q7x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -247,22 +272,15 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtC-X9-WhU" userLabel="The Roof">
                                 <rect key="frame" x="34" y="417" width="346" height="61"/>
                                 <color key="backgroundColor" red="0.66046150189999997" green="0.19272106620000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="61" id="nHi-2I-YAv"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <inset key="imageEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="THE ROOF">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" weight="semibold"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvK-jQ-a73">
-                                <rect key="frame" x="0.0" y="44" width="102" height="34"/>
-                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Home" image="house.fill" catalog="system">
-                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <connections>
+                                    <segue destination="Cc9-Jk-d0y" kind="show" id="YlE-Am-nop"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOOSE A WALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KVg-W9-939" userLabel="Select Wall">
                                 <rect key="frame" x="10" y="86" width="394" height="114"/>
@@ -276,28 +294,23 @@
                         <constraints>
                             <constraint firstItem="RtC-X9-WhU" firstAttribute="top" secondItem="KVg-W9-939" secondAttribute="bottom" constant="217" id="4I8-Za-rGo"/>
                             <constraint firstItem="uok-fE-8vL" firstAttribute="trailing" secondItem="RtC-X9-WhU" secondAttribute="trailing" constant="34" id="5DO-qO-Bdm"/>
-                            <constraint firstItem="rvK-jQ-a73" firstAttribute="top" secondItem="uok-fE-8vL" secondAttribute="top" id="7Ji-Jd-h5x"/>
-                            <constraint firstItem="rvK-jQ-a73" firstAttribute="leading" secondItem="uok-fE-8vL" secondAttribute="leading" id="MyI-rn-WfW"/>
                             <constraint firstItem="RtC-X9-WhU" firstAttribute="leading" secondItem="uok-fE-8vL" secondAttribute="leading" constant="34" id="ca6-09-3BT"/>
-                            <constraint firstItem="uok-fE-8vL" firstAttribute="trailing" secondItem="rvK-jQ-a73" secondAttribute="trailing" constant="312" id="cby-hK-SpR"/>
                             <constraint firstItem="uok-fE-8vL" firstAttribute="bottom" secondItem="RtC-X9-WhU" secondAttribute="bottom" constant="384" id="r2X-gi-RMe"/>
-                            <constraint firstItem="KVg-W9-939" firstAttribute="top" secondItem="rvK-jQ-a73" secondAttribute="bottom" constant="8" id="vpz-Iu-i47"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uok-fE-8vL"/>
                     </view>
+                    <navigationItem key="navigationItem" id="IHl-Xp-8AA"/>
                     <connections>
-                        <outlet property="home" destination="rvK-jQ-a73" id="yTJ-V7-GmA"/>
                         <outlet property="theRoof" destination="RtC-X9-WhU" id="DkR-t3-qHE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCJ-Tw-3NP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1682.608695652174" y="739.95535714285711"/>
+            <point key="canvasLocation" x="1823" y="96"/>
         </scene>
     </scenes>
     <resources>
         <image name="IMG-5231" width="1200" height="1600"/>
-        <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="paperclip" catalog="system" width="64" height="64"/>
     </resources>
 </document>

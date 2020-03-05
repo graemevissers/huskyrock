@@ -10,7 +10,6 @@ import UIKit
 
 class WallSelectViewController: UIViewController {
     
-    @IBOutlet weak var home: UIButton!
     @IBOutlet weak var theRoof: UIButton!
     
     override func viewDidLoad() {
